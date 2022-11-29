@@ -28,3 +28,7 @@ def is_isogram(string):
         except:
         # И соответственно, этот массив нам подходит
             return True
+        
+
+    # А люди с более чем 3 iq решили вот так:
+    return len(set(string.lower())) == len(string)
