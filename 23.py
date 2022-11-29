@@ -11,5 +11,8 @@ def high_and_low(numbers):
     # Возвращаем строку с макс. и мин. значением
     # *Не забудем про пробел*
     return str(max(new_list)) + " " + str(min(new_list))
-
     # Объяснять в принципе не было смыла, но ладно
+
+    # А вот умные люди решали:
+    nums = sorted(numbers.split(), key=int)
+    return '{} {}'.format(nums[-1], nums[0])
